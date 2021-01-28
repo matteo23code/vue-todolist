@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>vue-classe</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+   <div id="app">
+
+     <input v-on:keyup.enter="submit" v-model="testo">
+     <button type="submit" @click="submit">Submit</button>
+
+   <ul>
+     <li v-for='element in lista'>
+       {{element}}
+       <i class="fa fa-times" aria-hidden="true" @click="delete(i)" ></i>
+     </li>
+   </ul>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+   <script src="js/script.js"></script>
+  </body>
+</html>
